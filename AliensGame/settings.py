@@ -34,7 +34,7 @@ class Settings():
 		self.ship_speed = 1
 		self.bullet_speed = 2
 		self.alien_speed = 0.5
-		self.fleet_speed = 100
+		self.fleet_speed = 10
 	
 	#提高难度等级
 	def increase_speed(self):

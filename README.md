@@ -3,6 +3,9 @@
 
 外星人入侵/飞机大战游戏：
 
-进入python_project\python_game\AliensGame
+进入python_game\AliensGame
 
 运行alien_invasion.py
+
+效果图：
+![](https://i.imgur.com/Z7nzKTe.png)
