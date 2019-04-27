@@ -9,7 +9,7 @@ pg.display.set_caption(("打乒乓球"))   #设置屏幕标题
 pp=255,140,0                     #red是一个元组，表示乒乓球的RGB颜色
 green=0,255,0
 white=255,255,255
-cs=225,121,21               #橙色
+blue=0,0,255               #蓝色
 
 x=120
 y=120
@@ -18,8 +18,10 @@ vy=1
 a=200
 
 
-zt1=pg.font.SysFont('stkaiti',24)
-zt2=pg.font.SysFont('stkaiti',20)
+# zt1=pg.font.SysFont('stkaiti',24)
+zt1=pg.font.Font('C:\Windows\Fonts\simhei.ttf',24)
+# zt2=pg.font.SysFont('stkaiti',20)
+zt2=pg.font.Font('C:\Windows\Fonts\simhei.ttf',20)
 
 def printtext(font,text,x,y,color):
     img=font.render(text,True,color)
@@ -62,13 +64,13 @@ while True:
         break
     sleep(0.005)  #休眠一定时间，不然乒乓球速度依然很快
     printtext(zt1,"移动鼠标控制乒乓板左右移动",20,30,white)
-    printtext(zt2,"得分",550,12,cs)
-    printtext(zt2,str(fs),560,32,cs)
+    printtext(zt2,"得分",550,12,blue)
+    printtext(zt2,str(fs),560,32,blue)
     pg.display.update()
 
 scr.fill((211,21,33))   #游戏结束后全屏改变颜色
-zt3=pg.font.SysFont('stkaiti',120)
-zt4=pg.font.SysFont('stkaiti',60)
+zt3=pg.font.Font('C:\Windows\Fonts\simhei.ttf',120)
+zt4=pg.font.Font('C:\Windows\Fonts\simhei.ttf',60)
 printtext(zt3,"游戏结束",60,120,white)
 printtext(zt4,'得分: '+str(fs),120,400,white)
 pg.display.update()
